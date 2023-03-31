@@ -1,0 +1,4 @@
+web2print-bricks-bundle:
+    resource: '@Web2PrintBricksBundle'
+    type: annotation
+    prefix: /s1/web2print-bricks

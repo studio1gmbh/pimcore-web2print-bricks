@@ -1,0 +1,38 @@
+{
+  "name": "studio1/web2print-bricks",
+  "type": "pimcore-bundle",
+  "license": "GPL-3.0-or-later",
+  "description": "Web2PrintBricksBundle for Pimcore",
+  "authors": [
+    {
+      "name": "Studio1 Kommunikation GmbH",
+      "email": "info@studio1.de",
+      "homepage": "https://www.studio1.de/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Studio1\\Web2PrintBricksBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Studio1\\Web2PrintBricksBundle\\Web2PrintBricksBundle"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "eloquent/composer-npm-bridge": true
+    }
+  },
+  "require": {
+    "pimcore/pimcore": "^10.0",
+    "pimcore/web2print-tools-bundle": "4.0.8",
+    "php": "^8.0",
+    "spiritix/php-chrome-html2pdf": "v1.7.3",
+    "studio1/utility": "2.0.7"
+  }
+}
