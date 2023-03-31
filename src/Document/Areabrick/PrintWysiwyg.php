@@ -1,16 +1,13 @@
 <?php
 
 /**
- * Pimcore
+ * Studio1 Kommunikation GmbH
  *
- * This source file is available under two different licenses:
- * - GNU General Public License version 3 (GPLv3)
- * - Pimcore Enterprise License (PEL)
- * Full copyright and license information is available in
- * LICENSE.md which is distributed with this source code.
+ * This source file is available under following license:
+ * - GNU General Public License v3.0 (GNU GPLv3)
  *
- *  @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
- *  @license    http://www.pimcore.org/license     GPLv3 and PEL
+ *  @copyright  Copyright (c) Studio1 Kommunikation GmbH (http://www.studio1.de)
+ *  @license    https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
 namespace Studio1\Web2PrintBricksBundle\Document\Areabrick;

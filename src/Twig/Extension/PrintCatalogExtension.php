@@ -1,21 +1,17 @@
 <?php
 
 /**
- * Pimcore
+ * Studio1 Kommunikation GmbH
  *
- * This source file is available under two different licenses:
- * - GNU General Public License version 3 (GPLv3)
- * - Pimcore Enterprise License (PEL)
- * Full copyright and license information is available in
- * LICENSE.md which is distributed with this source code.
+ * This source file is available under following license:
+ * - GNU General Public License v3.0 (GNU GPLv3)
  *
- *  @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
- *  @license    http://www.pimcore.org/license     GPLv3 and PEL
+ *  @copyright  Copyright (c) Studio1 Kommunikation GmbH (http://www.studio1.de)
+ *  @license    https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
 namespace Studio1\Web2PrintBricksBundle\Twig\Extension;
 
-use Studio1\UtilityBundle\Utility\String\StringUtils;
 use Pimcore\Model\Asset\Image;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Hotspotimage;
 use Pimcore\Model\DataObject\ClassDefinition\Data\ImageGallery;
@@ -26,6 +22,7 @@ use Pimcore\Model\DataObject\ClassDefinition\Data\Select;
 use Pimcore\Model\Element\AbstractElement;
 use Pimcore\Translation\Translator;
 use Pimcore\Twig\Extension\Templating\Placeholder;
+use Studio1\UtilityBundle\Utility\String\StringUtils;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

@@ -1,14 +1,17 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: piseke
- * Date: 23.03.23
- * Time: 12:28
+ * Studio1 Kommunikation GmbH
+ *
+ * This source file is available under following license:
+ * - GNU General Public License v3.0 (GNU GPLv3)
+ *
+ *  @copyright  Copyright (c) Studio1 Kommunikation GmbH (http://www.studio1.de)
+ *  @license    https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
 namespace Studio1\Web2PrintBricksBundle;
 
-use DirectoryIterator;
 use Exception;
 use Pimcore\Extension\Bundle\Installer\SettingsStoreAwareInstaller;
 use Pimcore\Model\Asset\Image\Thumbnail\Config;
@@ -17,6 +20,7 @@ use Pimcore\Model\Property\Predefined\Listing;
 
 /**
  * Installer
+ *
  * @see \Pimcore\Bundle\PortalEngineBundle\Installer
  */
 class Installer extends SettingsStoreAwareInstaller
@@ -36,7 +40,9 @@ class Installer extends SettingsStoreAwareInstaller
 
     /**
      * Install pre-defined properties
+     *
      * @return self
+     *
      * @see \Pimcore\Bundle\PortalEngineBundle\Installer::installPredefinedProperties()
      */
     protected function installPredefinedProperties(): self
@@ -98,6 +104,7 @@ class Installer extends SettingsStoreAwareInstaller
 
     /**
      * Install thumbnail configurations
+     *
      * @return self
      * @noinspection PhpReturnValueOfMethodIsNeverUsedInspection
      */
@@ -137,7 +144,7 @@ class Installer extends SettingsStoreAwareInstaller
                             'positioning' => 'center',
                             'forceResize' => false,
                         ],
-                    ],[
+                    ], [
                         'method' => 'roundCorners',
                         'arguments' => [
                             'width' => 2,
@@ -204,5 +211,4 @@ class Installer extends SettingsStoreAwareInstaller
 
         return $this;
     }
-
 }
