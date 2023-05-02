@@ -2,7 +2,12 @@
 
 ## Installation
 
-### 1. Use this bundle
+### 1. Preparation
+
+Your Pimcore Docker stack must be built on the current version of Studio1® Pimcore PHP Docker Image.
+See: https://github.com/studio1gmbh/pimcore-docker
+
+### 2. Use this bundle
 
 Run following command in PHP FPM docker container:
 
@@ -11,36 +16,6 @@ composer require studio1/web2print-bricks
 ```
 
 This adds all dependencies, too.
-
-
-### 2. Prepare docker containers
-
-Run following command in **both** PHP FPM **and** supervisor:
-
-* Soft-link Chromium browser (if not already exists)
-  ````shell
-  ln -s /usr/bin/chromium /usr/bin/chromium-browser
-  ````
-* Update `node` version from 12.x to newer one (version 14.1.x or above, so we use 18.x)
-  ````shell
-  # Change to vendor directory and uninstall node-sass
-  cd vendor/spiritix/php-chrome-html2pdf
-  npm uninstall node-sass
-
-  # Download node.js in version 18 and install it (incl. dependencies)
-  curl -sL https://deb.nodesource.com/setup_18.x | bash -
-  apt-get install -y gcc g++ make
-  apt install -y nodejs
-
-  # Install npm and sass
-  npm install -g npm
-  npm install sass
-
-  # Remove puppeteer and re-install it with correct information about chrmoium installaltion
-  npm remove puppeteer
-  PUPPETEER_EXECUTABLE_PATH=`which chromium-browser` PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install puppeteer
-  npm install
-  ````
 
 ### 3. Enable/install Web-to-Print bundles
 
