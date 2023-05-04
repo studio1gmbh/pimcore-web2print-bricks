@@ -24,7 +24,7 @@ class Web2PrintBricksBundle extends AbstractPimcoreBundle
      */
     public function getVersion(): string
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     /**
