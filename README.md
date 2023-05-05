@@ -27,7 +27,13 @@ bin/console pimcore:bundle:enable Web2PrintToolsBundle
 bin/console pimcore:bundle:install Web2PrintToolsBundle
 bin/console pimcore:bundle:enable Web2PrintBricksBundle
 bin/console pimcore:bundle:install Web2PrintBricksBundle
+bin/console pimcore:bundle:enable OutputDataConfigToolkitBundle
+bin/console pimcore:bundle:install OutputDataConfigToolkitBundle
 ```
+
+Also see installation notes for `Web2PrintToolsBundle` and `OutputDataConfigToolkitBundle`:
+* https://github.com/pimcore/web2print-tools 
+* https://github.com/pimcore/output-data-config-toolkit
 
 ### 4. Change Web-to-Print settings
 
