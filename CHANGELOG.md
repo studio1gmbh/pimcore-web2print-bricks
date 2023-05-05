@@ -6,6 +6,10 @@ All notable changes to this Bundle will be documented in this file.
 |--------------------|---------------------|
 | 1.x.x              | Pimcore 10          |
 
+## [1.0.2] - 2023-05-05
+
+- Update README.md
+
 ## [1.0.1] - 2023-05-02
 
 - Update README.md to the latest version of https://github.com/studio1gmbh/pimcore-docker
