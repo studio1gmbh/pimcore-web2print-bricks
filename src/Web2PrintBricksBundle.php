@@ -13,6 +13,7 @@
 namespace Studio1\Web2PrintBricksBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
+use Pimcore\Extension\Bundle\Installer;
 
 /**
  * Web2Print Bricks Bundle
@@ -24,7 +25,7 @@ class Web2PrintBricksBundle extends AbstractPimcoreBundle
      */
     public function getVersion(): string
     {
-        return '1.0.2';
+        return '2.0.0';
     }
 
     /**
@@ -46,7 +47,7 @@ class Web2PrintBricksBundle extends AbstractPimcoreBundle
     /**
      * @inheritDoc
      */
-    public function getInstaller(): ?object
+    public function getInstaller(): ?Installer\InstallerInterface
     {
         return $this->container->get(Installer::class);
     }

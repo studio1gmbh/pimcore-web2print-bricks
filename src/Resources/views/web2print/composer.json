@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/web2print",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "lschmidt",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}

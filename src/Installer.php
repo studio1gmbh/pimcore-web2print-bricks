@@ -28,7 +28,7 @@ class Installer extends SettingsStoreAwareInstaller
     /**
      * @inheritDoc
      */
-    public function install()
+    public function install(): void
     {
         $this
             ->installPredefinedProperties()

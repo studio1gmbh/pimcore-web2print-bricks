@@ -29,10 +29,8 @@
     }
   },
   "require": {
-    "pimcore/pimcore": "^10.0",
-    "pimcore/web2print-tools-bundle": "4.0.8",
-    "php": "^8.0",
-    "spiritix/php-chrome-html2pdf": "v1.7.3",
-    "studio1/utility": "2.0.7"
+    "pimcore/pimcore": "^11.0",
+    "pimcore/web2print-tools-bundle": "^5.0",
+    "php": "^8.2"
   }
 }
